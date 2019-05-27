@@ -1,0 +1,317 @@
+body {
+     min-width: 800px !important; min-height: 600px !important;
+    font: 14px 'Verdana';
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+ul {
+    display: block;
+    margin: 0.2;
+    padding: 0;
+    list-style: none;
+
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+    z-index:2;
+}
+ul.menu > li > a {
+    display: block;
+    margin:2px;
+    padding: 10px;
+    color: white;
+    background-color: #00d4ff;
+    text-decoration: none;
+    opacity: 0.8;
+
+}
+ul.menu > li > a:hover {
+    background-color: black;
+}
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 120px;
+    top: 37px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #00d4ff;
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    padding: 10px;
+    color: white;
+    background-color: #00d4ff;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+div.calen{
+   display:none;
+   align-content: center;
+    margin:2px;
+    padding: 10px;
+    color: white;
+    background-color: #00d4ff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+input.calen:focus ~ div.calen{
+    color: black;
+}
+
+
+  td.calen {
+    background-color:#00d4ff ;
+  }
+  td.calen : hover {
+    background-color: white;
+  }
+
+#content {
+   font-family: 'Arial', cursive;
+   color: red;
+    font-size: 25px;
+    text-align: left;
+    float: left;
+   width: 40%;
+   }
+
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #2e2e2e; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+#photo{
+ text-align: center;
+  width: 50%;
+  border: thin silver solid;
+  margin:0.8em;
+  padding: 0.5em;
+}
+ .fig {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: left; /* Выравнивание по центру */
+    font-style: italic; /* Курсивное начертание */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    color: #666; /* Цвет подрисуночной подписи */
+    float: left;
+    width: 50%;
+    }
+img.fig {
+  width: 100%;
+  position: relative;
+}
+
+div.tex{
+  margin: 50px;
+  border:3px dashed  silver;
+   background-color: black;
+   opacity: 0.5;
+    padding: 15px;
+    font-family: 'arial',cursive;
+     font-size: 20px;
+      color: white ;
+        word-wrap: break-word;
+         text-align:justify;
+          text-indent: 50pt; 
+}
+h1 {
+  width: 100%;
+  font-family: 'Arial', cursive;
+  color: #ff556a;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+  margin:20px auto 0 auto;
+}
+#bigpic{
+  margin-top: 2%;
+  margin-left: 10%;
+  align-content: center;
+  z-index: 2;
+  display: none; 
+  position: absolute;
+   width: 70%;
+   background-color: rgba(63, 189, 211, 0.9);
+
+}
+#bigpic img {
+   margin-left: 15%;
+   margin-bottom: 5%;
+   text-align: center;
+    z-index: 2;
+    width: 70%;
+   position: relative;
+   display: block;
+
+}
+
+
+.valid {
+     border: 2px solid green;
+    color: red !important;
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 11px;
+    font-family: Verdana;
+    background: red !important;
+}
+
+
+.novalid {
+     border: 3px solid red;
+    color: #000000;
+    padding: 3px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 11px;
+    font-family: Verdana;
+    background: red !important;
+}
+
+
+.bk {
+    background: red !important;
+}
+
+.gallery-box{
+  width:738px;
+  padding:10px 0 0;
+  margin:0 auto;
+}
+.view{
+  position:relative;
+  margin:0 0 5px;
+}
+.big-image img{
+  display:block;
+  width:738px;
+  height:480px;
+}
+.prev, .next{
+  position:absolute;  
+  width:20px;
+  height:40px;
+}
+.prev{
+  bottom:20px;
+  left:20px;
+  background:green no-repeat 0 0;
+}
+.next{
+  bottom:20px;
+  right:20px;
+  background:red no-repeat -48px 0;
+}
+ 
+.thumbnails{
+  width:815px;
+}
+.thumbnails a{
+  float:left;
+  margin:0 40px 0 0;
+}
+.thumbnails a img{
+  width:150px;
+  height:90px;
+  border: 2px solid transparent;
+  display:block;
+}
+.thumbnails .active img{
+  
+  border-color:red;
+}
+#imgs{
+position: absolute;
+opacity: 1.0;
+bottom: -400px;
+right: 700px;
+}
+
+.jQtooltip {
+  position: relative;
+  cursor: help;
+  border-bottom: 1px dotted;
+}
+.jQtooltip div {
+  display: none;
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  z-index: 1000;
+  width: 190px;
+  padding: 8px 12px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  box-shadow: 0 1px 3px #C4C4C4;
+  border: 1px solid #0033cc;
+  background: #00d4ff;
+  border-radius: 2px;
+}
+
+
+#modal_form {
+  width: 300px; 
+  height: 300px; /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 5px;
+  border: 3px #00d4ff solid;
+  background: #00d4ff;
+  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+  top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+  left: 50%; /* пoлoвинa экрaнa слевa */
+  margin-top: -150px;
+  margin-left: -150px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 5; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+}
+/* Пoдлoжкa */
+#overlay {
+  z-index:3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position:fixed; /* всегдa перекрывaет весь сaйт */
+  background-color:#000; /* чернaя */
+  opacity:1; /* нo немнoгo прoзрaчнa */
+  -moz-opacity:1; /* фикс прозрачности для старых браузеров */
+  filter:alpha(opacity=80);
+  width:100%; 
+  height:100%; /* рaзмерoм вo весь экрaн */
+  top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  left:0;
+  cursor:pointer;
+  display:none; /* в oбычнoм сoстoянии её нет) */
+}

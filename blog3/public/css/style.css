@@ -1,0 +1,95 @@
+body { min-width: 800px !important; min-height: 600px !important;}
+
+ul.menu {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 10px; /*убираем левый отступ, равный 40px*/
+}
+a {text-decoration: none; /*убираем подчеркивание текста ссылок*/
+ color: white;
+}
+a:visited {
+    color: #cecece; /* Цвет посещенных ссылок */
+   }
+a:active {
+    color: #ffff00;}
+li {
+  border: 2.5px solid #333;
+  top:10px;
+  padding: 10px;
+  font-family:'Arial', cursive ;
+  background: green;
+   display: inline;
+  margin-right: -3px;
+}
+li:hover {
+text-decoration-color: white;
+    background: black; /* Цвет ссылки при наведении на нее курсора мыши */  
+transition: all 0.5s;
+  }
+h1 {
+  width: 100%;
+  font-family: 'Arial', cursive;
+  color: #ff556a;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+  margin:20px auto 0 auto;
+}
+
+#content {
+   font-family: 'Arial', cursive;
+   color: red;
+    font-size: 25px;
+    text-align: left;
+    float: left;
+   width: 40%;
+   }
+
+#footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #2e2e2e; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+#photo{
+ text-align: center;
+  width: 50%;
+  border: thin silver solid;
+  margin:0.8em;
+  padding: 0.5em;
+}
+ .fig {
+    display: block; /* Блочный элемент (для старых браузеров) */
+    text-align: left; /* Выравнивание по центру */
+    font-style: italic; /* Курсивное начертание */
+    margin-top: 0; /* Отступ сверху */
+    margin-bottom: 5px; /* Отступ снизу */
+    color: #666; /* Цвет подрисуночной подписи */
+    float: left;
+    width: 50%;
+
+}
+img.fig {
+  width: 100%;
+  position: relative;
+}
+img:hover {
+   opacity: 0;
+  transition:opacity 2s;
+}
+div.tex{
+  margin: 50px;
+  border:3px dashed  silver;
+   background-color: black;
+    opacity: 0.5;
+    padding: 15px;
+    font-family: 'arial',cursive;
+     font-size: 20px;
+      color: white ;
+        word-wrap: break-word;
+         text-align:justify;
+          text-indent: 50pt; 
+}
