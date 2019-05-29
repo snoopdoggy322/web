@@ -21,7 +21,7 @@ abstract class AdminBase
 
         // Если роль текущего пользователя "admin", пускаем его в админпанель
         if ($user['role'] == 'admin') {
-            return true;
+                        return true;
         }
 
         // Иначе завершаем работу с сообщением об закрытом доступе

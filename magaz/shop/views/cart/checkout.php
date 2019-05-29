@@ -1,6 +1,7 @@
 <?php include ROOT . '/views/layouts/header.php'; ?>
 
 <section>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -52,7 +53,7 @@
                                         <p><?php echo $lang["Ваше имя"]; ?></p>
                                         <input type="text" name="userName" placeholder="" value="<?php echo $userName; ?>"/>
 
-                                        <p><?php echo $lang["Номер телефона"]; ?></p>
+                                        <p><?php echo $lang["Номер телефона"]; ?>/email</p>
                                         <input type="text" name="userPhone" placeholder="" value="<?php echo $userPhone; ?>"/>
 
                                         <p><?php echo $lang["Коментарий к заказу"]; ?></p>
@@ -60,6 +61,7 @@
 
                                         <br/>
                                         <br/>
+                                        <div class="g-recaptcha" data-sitekey="6Lfbr6UUAAAAAE7cOqZdw4Y3yVdSqojf5dDIagIS"></div>
                                         <input type="submit" name="submit" class="btn btn-default" value="<?php echo $lang["Оформить"]; ?>" />
                                     </form>
                                 </div>

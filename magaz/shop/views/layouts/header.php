@@ -51,6 +51,7 @@
                             <div class="col-sm-6">
                                 <div class="social-icons pull-right">
                                     <ul class="nav navbar-nav">
+                                      
                                         <li class="dropdown"><a href="#">   <?php echo $lang["Язык"]; ?>  <i class="fa fa-angle-down"></i></a>
                                             <ul role="menu" class="sub-menu">
 

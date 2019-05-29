@@ -14,11 +14,11 @@
             
             <br/>
             
-            <ul>
-                <li><a href="/admin/product">Управление товарами</a></li>
-                <li><a href="/admin/category">Управление категориями</a></li>
-                <li><a href="/admin/order">Управление заказами</a></li>
-                <li><a href="/admin/logo">Управление информации о магазине</a></li>
+            <ul  display=inline-block>
+                <li> <a href="/admin/product"> <button type="button" class="btn btn-warning">Управление товарами</button></a></li>
+                <li><a href="/admin/category"><button type="button" class="btn btn-warning">Управление категориями</button></a></li>
+                <li><a href="/admin/order"><button type="button" class="btn btn-warning">Управление заказами</button></a></li>
+                <li><a href="/admin/logo"><button type="button" class="btn btn-warning">Управление информации о магазине</button></a></li>
             </ul>
             
         </div>

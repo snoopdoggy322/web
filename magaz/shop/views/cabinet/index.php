@@ -8,7 +8,7 @@
             
             <h4><?php echo $lang["Привет"]; ?>, <?php echo $user['name'];?>!</h4>
             <ul>
-                <li><a href="/cabinet/edit"><?php echo $lang["Редактировать данные"]; ?></a></li>
+                <li><a href="/cabinet/edit"><button type="button" class="btn btn-warning"><?php echo $lang["Редактировать данные аккаунта"]; ?></button></a></li>
             </ul>
             
         </div>

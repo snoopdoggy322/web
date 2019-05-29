@@ -7,7 +7,8 @@
        <form action="#" method="post" enctype="multipart/form-data"; 
        onsubmit=
        '$("#ab").val(CKEDITOR.instances["editor1"].getData());'>
-<textarea id="editor1" name="txt" cols="100" rows="20">
+<input type="checkbox" checked data-toggle="toggle" data-on="Hello<br>World" data-off="Goodbye<br>World">
+<textarea id="editor1" name="txt" cols="50" rows="20">
   <?php
   if ($_SESSION["lang"]=="ru")
    echo $about["about_ru"];
@@ -36,7 +37,9 @@
    Product::updateAboutRu($about);
    else Product::updateAboutEn($about);
             
-
+          echo "<script language='javascript'>";
+echo "location='login.php';";
+echo "</script>";
             // Перенаправляем пользователя на страницу управлениями заказами
         }
         return true;

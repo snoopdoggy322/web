@@ -102,6 +102,9 @@ class CartController
         $userName = false;
         $userPhone = false;
         $userComment = false;
+        $capchaURL=" https://www.google.com/recaptcha/api/siteverify";
+        $key="6Lfbr6UUAAAAALhnkUxjQSQKQJ7sxJAx2mUZ8txF";
+
 
         // Статус успешного оформления заказа
         $result = false;
@@ -113,6 +116,7 @@ class CartController
             $userId = User::checkLogged();
             $user = User::getUserById($userId);
             $userName = $user['name'];
+            $userPhone = $user['email'];
         } else {
             // Если гость, поля формы останутся пустыми
             $userId = false;
@@ -125,10 +129,13 @@ class CartController
             $userName = $_POST['userName'];
             $userPhone = $_POST['userPhone'];
             $userComment = $_POST['userComment'];
+            $capcha=$_POST["g-recaptcha-response"];
+
+            $capcha_querry=$capchaURL."?secret=".$key."&response=". $capcha."&remoteip=".$_SERVER["REMOTE_ADDR"];
 
             // Флаг ошибок
             $errors = false;
-
+            if(!$capcha) $errors[] ="Докажите что вы не робот";
             // Валидация полей
             if (!User::checkName($userName)) {
                 $errors[] = 'Неправильное имя';
